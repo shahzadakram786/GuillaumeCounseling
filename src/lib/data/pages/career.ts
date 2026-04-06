@@ -1,0 +1,90 @@
+export const careerData = {
+  title: "Careers at Guillaume Counseling",
+  subtitle: "At Guillaume Counseling, we've built a practice where clinicians are supported, systems are clear, and growth is intentional.",
+  tagline: "Not just a place to work — a place to build your career.",
+  applyEmail: "mailto:career@guillaumecounseling.com",
+  whyThisPractice: [
+    { title: "Structured Support", description: "Supervision and consultation are built into your schedule — and paid." },
+    { title: "Transparent Compensation", description: "W-2 model with clear expectations and no hidden structures." },
+    { title: "Flexible Scheduling", description: "Hybrid roles with flexibility and sustainable caseload expectations." },
+    { title: "Growth-Focused", description: "Designed for clinicians building experience in private practice." },
+  ],
+  ourApproach: {
+    intro: "We are not a \"figure it out on your own\" practice.",
+    text: "We provide structure, support, and clear expectations so you can focus on clinical work — not navigating systems alone.",
+    goal: "Our goal is simple: support clinicians in doing high-quality work without burning out.",
+    list: [
+      "Built-in supervision and consultation",
+      "Clear compensation and expectations",
+      "Flexible but consistent scheduling",
+      "Systems that support your work",
+    ],
+    closing: "We are designed for long-term sustainability, not short-term overload.",
+    image: "https://guillaumecounseling.com/wp-content/uploads/2026/03/Our-Approach-1024x684.webp",
+  },
+  positions: [
+    {
+      title: "Associate Clinicians (Pre-Licensed)",
+      details: ["Weekly paid supervision", "Structured caseload development", "Strong clinical support"],
+      caseload: { partTime: "10–23 sessions/week", fullTime: "24–34 sessions/week" },
+    },
+    {
+      title: "Licensed Clinicians",
+      details: ["Independent clinical work", "Weekly consultation and collaboration", "Opportunities for groups and expanded services"],
+      caseload: { partTime: "10–23 sessions/week", fullTime: "24–34 sessions/week" },
+    },
+    {
+      title: "Clinical Supervisors",
+      details: ["Provide supervision and/or clinical services", "Leadership role in clinical quality", "Structured expectations and support"],
+    },
+    {
+      title: "Student Interns",
+      subtitle: "Oregon Only — Starting January 2027",
+      details: ["Structured training and onboarding", "Gradual caseload development", "Exposure to private practice systems"],
+    },
+    {
+      title: "Administrative Office Staff",
+      subtitle: "Sacramento Only — Bilingual Spanish Required",
+      details: ["Scheduling, client communication, operations"],
+      hours: { partTime: "10–29 hours/week", fullTime: "30–40 hours/week" },
+    },
+  ],
+  allRolesInfo: [
+    "Part-time or part-time to full-time",
+    "Hybrid (in-person + remote)",
+    "Remote-only available in Oregon only",
+    "Remote-only NOT available in California",
+  ],
+  whoFitFor: [
+    "You want experience in a private practice setting",
+    "You prefer structure, support, and collaboration",
+    "You're open to supervision and feedback",
+    "You want to build a caseload gradually",
+    "You're exploring full-time clinical work over time",
+    "You want supplemental or transitional work",
+  ],
+  whoNotFitFor: [
+    "You need to start full-time immediately",
+    "You expect an instant full caseload",
+    "You prefer fully independent work",
+    "You are not open to feedback or structure",
+  ],
+  expectations: [
+    { title: "Clinical Support", description: "Weekly supervision or consultation + ongoing collaboration" },
+    { title: "Compensation", description: "W-2 model, paid admin time, paid no-shows" },
+    { title: "Scheduling", description: "Flexible but structured to support consistency" },
+    { title: "Benefits", description: "Health, PTO, retirement, CEU support (full-time eligible)" },
+    { title: "Training", description: "Structured onboarding + ongoing development" },
+    { title: "Environment", description: "Streamlined systems + team-based support" },
+  ],
+  benefitsImage: "https://guillaumecounseling.com/wp-content/uploads/2024/07/benefits-offered.jpg",
+  representation: {
+    intro: "We are intentional about building a team that reflects the communities we serve.",
+    values: ["Cultural knowledge", "Language access", "Lived experience", "A commitment to equitable care"],
+    closing: "Representation is not a statement — it's part of how we hire and practice.",
+  },
+  applyInfo: {
+    text: "If you're interested in joining our team, please submit:",
+    items: ["Resume or CV", "Licensure status (or expected timeline)", "Brief statement of interest"],
+  },
+};
