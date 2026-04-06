@@ -14,7 +14,7 @@ interface PageHeroProps {
 export const PageHero = ({ title, breadcrumbs, metaTitle, metaDescription, children }: PageHeroProps) => {
   return (
     <>
-      <section className="bg-gradient-to-r from-primary to-secondary pt-28 pb-12 md:pt-32 md:pb-16">
+      <section className="bg-gradient-to-r from-secondary to-primary pt-28 pb-12 md:pt-10 md:pb-15">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary-foreground mb-4">
             {title}

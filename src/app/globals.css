@@ -90,3 +90,12 @@
     @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary;
   }
 }
+
+@player components {
+.container {
+    width: 100% !important;
+    max-width: 1360px !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

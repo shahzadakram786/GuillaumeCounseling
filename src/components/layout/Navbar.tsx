@@ -34,8 +34,8 @@ export const Navbar = () => {
       <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:bg-primary focus:text-primary-foreground focus:px-4 focus:py-2 focus:rounded">
         Skip to content
       </a>
-      <header className={` top-0 left-0 right-0 z-50 transition-all duration-300 bg-background ${scrolled ? "shadow-md" : "shadow-sm"}`}>
-        <nav className="container mx-auto flex items-center justify-between px-4 py-2">
+      <header className={` mx-auto z-50 lg:max-w-6xl transition-all duration-300 bg-background ${scrolled ? "shadow-md" : "shadow-sm"}`}>
+        <nav className="container mx-auto px-4 flex items-center justify-between py-2">
           <Link href="/" className="flex-shrink-0" aria-label="Guillaume Counseling Home">
             <img
               src={siteConfig.logo}
@@ -46,7 +46,7 @@ export const Navbar = () => {
           </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden lg:flex items-center gap-0">
+          <div className="hidden lg:flex items-center gap-0 z-100">
             {navLinks.map((item) => (
               <div
                 key={item.label}
@@ -67,7 +67,7 @@ export const Navbar = () => {
                       <ChevronDown className="h-3.5 w-3.5" />
                     </button>
                     {hoveredDropdown === item.label && (
-                      <div className="absolute top-full left-0 pt-1">
+                      <div className="absolute top-full left-0 pt-1 z-50">
                         <div className="bg-background border border-border rounded-md shadow-lg py-1 min-w-[220px]">
                           {item.children.map((child) => (
                             <Link
