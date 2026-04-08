@@ -16,7 +16,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning >
-      <body className="font-sans antialiased " suppressHydrationWarning>
+      <body className="font-marcellus
+
+
+ antialiased " suppressHydrationWarning>
         <Providers>
           <Navbar />
           {children}

@@ -122,7 +122,10 @@ const Leadership = () => {
               </h2>
               <div className="flex items-center font-bold justify-center gap-1.5 text-[#17609f]">
                 <MapPin className="w-[18px] h-[18px] fill-[#17609f] text-white" />
-                <h3 className="text-lg md:text-[19px] font-sans font-bold text-gray-900">
+                <h3 className="text-lg md:text-[19px] font-marcellus
+
+
+ font-bold text-gray-900">
                   Oregon Clinical Supervisors
                 </h3>
               </div>
@@ -143,7 +146,10 @@ const Leadership = () => {
             {/* 1. TITLE IN ONE DIV */}
             <div className="mb-8 flex items-center justify-center gap-1.5 text-[#17609f]">
               <MapPin className="w-[18px] h-[18px] fill-[#17609f] text-white" />
-              <h3 className="text-lg md:text-[19px] font-sans font-bold text-gray-900">
+              <h3 className="text-lg md:text-[19px] font-marcellus
+
+
+ font-bold text-gray-900">
                 California Clinical Supervisors
               </h3>
             </div>

@@ -42,7 +42,10 @@ export const AboutSection = () => {
             </h2>
             
             {/* Description: Tweaked line-height and text color for perfect readability */}
-            <p className="text-[15px] md:text-base text-gray-700 font-sans leading-[1.7] mb-8">
+            <p className="text-[15px] md:text-base text-gray-700 font-marcellus
+
+
+ leading-[1.7] mb-8">
               {aboutSection.text}
             </p>
             

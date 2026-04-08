@@ -41,7 +41,10 @@ export const AboutSection = ({ founderImage, aboutText }: { founderImage: string
           </h3>
           
           {/* Paragraphs (These will flow naturally around and under the image) */}
-          <div className="space-y-4 text-sm md:text-[15px] leading-relaxed text-white/95 font-sans">
+          <div className="space-y-4 text-sm md:text-[15px] leading-relaxed text-white/95 font-marcellus
+
+
+">
             {aboutText.map((text, i) => (
               <p key={i}>{text}</p>
             ))}

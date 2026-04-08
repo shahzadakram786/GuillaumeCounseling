@@ -70,7 +70,10 @@ export const ServiceDetails = () => {
               // Gradient from pink to blue matching your brand
               className="rounded-3xl p-8 md:p-10 shadow-2xl bg-gradient-to-r from-[#d8008a] to-[#2b7bc4]"
             >
-              <h2 className="text-3xl md:text-[34px] font-sans font-medium text-white leading-[1.3] tracking-tight">
+              <h2 className="text-3xl md:text-[34px] font-marcellus
+
+
+ font-medium text-white leading-[1.3] tracking-tight">
                 Individual Therapy, <br />
                 Couples Therapy, <br />
                 Family Therapy, and <br />

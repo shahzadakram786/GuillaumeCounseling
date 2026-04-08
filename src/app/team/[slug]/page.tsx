@@ -66,7 +66,10 @@ const SplitBioCard = ({ paragraphs, imageSrc }: { paragraphs?: string[], imageSr
       </div>
       <div className="w-full md:w-[55%] p-4 flex flex-col justify-center space-y-5">
         {paragraphs.map((p, i) => (
-          <p key={i} className="text-[15px] text-gray-700 leading-relaxed font-sans">{p}</p>
+          <p key={i} className="text-[15px] text-gray-700 leading-relaxed font-marcellus
+
+
+">{p}</p>
         ))}
       </div>
     </div>
@@ -127,8 +130,14 @@ export default async function TeamMemberPage({ params }: TeamMemberPageProps) {
                 <div className="flex flex-col gap-4 px-1 pb-2 text-left">
                   {sidebarDetails.map((detail, idx) => detail.value && (
                     <div key={idx} className="flex flex-col gap-0.5">
-                      <h4 className="font-sans text-[18px] font-bold text-gray-900 leading-tight">{detail.label}</h4>
-                      <p className="font-sans text-[15px] text-gray-800 leading-snug">{detail.value}</p>
+                      <h4 className="font-marcellus
+
+
+ text-[18px] font-bold text-gray-900 leading-tight">{detail.label}</h4>
+                      <p className="font-marcellus
+
+
+ text-[15px] text-gray-800 leading-snug">{detail.value}</p>
                     </div>
                   ))}
                 </div>
@@ -156,10 +165,16 @@ export default async function TeamMemberPage({ params }: TeamMemberPageProps) {
             {/* --- RIGHT MAIN CONTENT --- */}
             <div className="lg:col-span-8">
               <h1 className="text-3xl md:text-4xl lg:text-[42px] font-marcellus text-gray-900 mb-2 leading-tight">{member.name}</h1>
-              <h2 className="text-lg md:text-[22px] font-sans text-[#2b7bc4] mb-10 font-medium">{member.title}</h2>
+              <h2 className="text-lg md:text-[22px] font-marcellus
+
+
+ text-[#2b7bc4] mb-10 font-medium">{member.title}</h2>
 
               {member.bio && (
-                <div className="prose prose-lg max-w-none text-gray-700 font-sans leading-relaxed space-y-5 mb-12">
+                <div className="prose prose-lg max-w-none text-gray-700 font-marcellus
+
+
+ leading-relaxed space-y-5 mb-12">
                   {member.bio.map((p: string, i: number) => <p key={i}>{p}</p>)}
                 </div>
               )}
@@ -175,7 +190,10 @@ export default async function TeamMemberPage({ params }: TeamMemberPageProps) {
               <GradientBioCard paragraphs={(member as any).bio4} imageSrc={(member as any).bio4Image || member.image} textClass="font-marcellus" imagePosition="right" />
 
               {(member as any).bio5 && (
-                <div className="prose prose-lg max-w-none text-gray-700 font-sans leading-relaxed space-y-5 mb-16">
+                <div className="prose prose-lg max-w-none text-gray-700 font-marcellus
+
+
+ leading-relaxed space-y-5 mb-16">
                   {(member as any).bio5.map((p: string, i: number) => <p key={i}>{p}</p>)}
                 </div>
               )}
