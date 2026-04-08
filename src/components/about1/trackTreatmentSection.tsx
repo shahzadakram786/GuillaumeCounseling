@@ -13,7 +13,10 @@ export const TreatmentTracksSection = ({ treatmentTracks }: { treatmentTracks: a
           <h2 className="text-[32px] md:text-[38px] font-marcellus text-gray-900 mb-2">
             Treatment Track <span className="text-[#2b7bc4]">Options</span>
           </h2>
-          <p className="text-[15px] text-gray-700 font-sans">
+          <p className="text-[15px] text-gray-700 font-marcellus
+
+
+">
             We have two different treatment options:
           </p>
         </div>
@@ -29,10 +32,16 @@ export const TreatmentTracksSection = ({ treatmentTracks }: { treatmentTracks: a
                 background: "linear-gradient(to right, #2b7bc4, #d8008a)",
               }}
             >
-              <h4 className="text-[17px] md:text-[18px] font-sans font-medium mb-3">
+              <h4 className="text-[17px] md:text-[18px] font-marcellus
+
+
+ font-medium mb-3">
                 {track.title}
               </h4>
-              <p className="text-[13px] md:text-[14px] text-white/95 leading-[1.6] font-sans">
+              <p className="text-[13px] md:text-[14px] text-white/95 leading-[1.6] font-marcellus
+
+
+">
                 {track.description}
               </p>
             </div>
@@ -57,7 +66,10 @@ export const PoliciesSection = ({ policyDocuments }: { policyDocuments: any[] })
         </h2>
 
         {/* Subtitle */}
-        <p className="text-[14px] md:text-[15px] text-gray-600 mb-8 max-w-3xl mx-auto font-extra-bold leading-relaxed font-sans">
+        <p className="text-[14px] md:text-[15px] text-gray-600 mb-8 max-w-3xl mx-auto font-extra-bold leading-relaxed font-marcellus
+
+
+">
           A full Policies and Procedures document is available for your review. This document is provided as a reference and may be reviewed at your convenience.
         </p>
 

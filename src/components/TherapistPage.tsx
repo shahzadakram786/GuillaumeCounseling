@@ -27,7 +27,10 @@ const TherapistCard = ({ therapist }: { therapist: TeamMember }) => (
         loading="lazy"
       />
       <div>
-        <h3 className="font-sans font-bold text-gray-900 text-[16px] md:text-[17px] leading-tight">
+        <h3 className="font-marcellus
+
+
+ font-bold text-gray-900 text-[16px] md:text-[17px] leading-tight">
           {therapist.name}
         </h3>
       </div>
@@ -81,7 +84,10 @@ export const TherapistPage = ({ title, therapists, portalUrl, canonicalPath, fea
 
       <main id="main-content" className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4 max-w-5xl">
-          <h2 className="text-3xl md:text-4xl font-sans font-bold text-gray-900 text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-marcellus
+
+
+ font-bold text-gray-900 text-center mb-12">
             {firstWord} <span className="text-[#17609f]">{restOfTitle}</span>
           </h2>
 

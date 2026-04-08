@@ -75,7 +75,10 @@ export const CulturalServices = () => {
               Culturally Specific <br />
               <span className="text-[#2b7bc4]">Services</span>
             </h2>
-            <p className="mt-4 text-sm md:text-base text-gray-700 font-sans">
+            <p className="mt-4 text-sm md:text-base text-gray-700 font-marcellus
+
+
+">
               We provide culturally specific services with a special focus on the following populations:
             </p>
           </div>
