@@ -5,6 +5,13 @@ export interface Therapist {
   location: string;
   details: string[];
   profileUrl?: string;
+  worksWith?: string; // Added this field for the sidebar card
+  languages?: string; // Added this field for the sidebar card
+  locations?: string[]; // Added this field for the sidebar card
+  appointmentStatus?: string | null; // Added this field for the sidebar card, can be null to hide
+  faithBased?: string | null; // Added this field for the sidebar card, can be null to hide
+  license?: string; // Added this field for the sidebar card
+  slug?: string; // <--- Added this new field for dynamic routing
 }
 
 export const oregonTherapists: Therapist[] = [
@@ -12,6 +19,7 @@ export const oregonTherapists: Therapist[] = [
     name: "Miles Cunningham, CSWA (#A16731)",
     image: "https://guillaumecounseling.com/wp-content/uploads/2026/02/Miles-Miles-Cunningham_headshot-1024x740-1.png",
     location: "Portland, Oregon",
+    slug: "miles-cunningham", // <--- THIS is what connects the button to his profile page!
     details: [
       "In-person at the SW Portland office only.",
       "African American Male therapist",
@@ -20,6 +28,11 @@ export const oregonTherapists: Therapist[] = [
       "In-person appointments are on Mondays.",
     ],
     profileUrl: "/providers/oregon-therapists",
+    worksWith: "Adults, couples, families",
+    languages: "English",
+    locations: ["Portland, Oregon", "In-person at the SW Portland office only"],
+    license: "CSWA (#A16731)",
+    appointmentStatus: null,
   },
   {
     name: "Rebecca Artrip, MA, Professional Counselor Associate (R10505)",
