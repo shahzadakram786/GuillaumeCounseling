@@ -86,4 +86,23 @@ export const insurancesData = {
     { label: "Oregon - Your Rights and Protections Against Surprise Medical Bills (pdf)", url: "https://guillaumecounseling.com/wp-content/uploads/2026/01/Oregon_Your-Rights-and-Protections-Against-Surprise-Medical-Bills.pdf" },
     { label: "California - Your Rights and Protections Against Surprise Medical Bills (pdf)", url: "https://guillaumecounseling.com/wp-content/uploads/2026/01/California_Your-Rights-and-Protections-Against-Surprise-Medical-Bills.pdf" },
   ],
+  // Add this inside your insurancesData object
+  additionalInfo: "We are actively expanding our in-network partnerships. Please check this page periodically for updates.",
+  
+  paymentPolicy: [
+    "Client is responsible for payment of services. All services are paid the day of the session, prior to attending the session.",
+    "We will automatically process your card on the day of the appointment.",
+    "We require a major credit card on file for all commercial insurance and self-pay clients.",
+    "Our rates are subject to change without notice.",
+    "You are responsible to pay the copay, co-insurance or deductible at the time of the appointment."
+  ],
+
+  financialResponsibility: {
+    intro: "Clients are responsible for understanding their insurance benefits and coverage.",
+    items: [
+      "Clients with a deductible are required to pay $100 at the time of the appointment until claims are processed",
+      "Clients with coinsurance are required to pay $30 at the time of the appointment",
+      "Balances will be updated once insurance claims are finalized"
+    ]
+  },
 };
