@@ -93,7 +93,7 @@ export const Hero = () => {
       {/* ==========================================
           PORTAL BUTTONS BAR
           ========================================== */}
-      <div className="bg-white py-6 border-y-2 border-[#d8008a] w-full">
+      <div className="bg-white py-6 border-y-2 border-[#d8008a] transition w-full">
         <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-5 md:gap-8">
           
           {/* DRY Method: Mapping over the array with MAGIC BORDER & GRADIENT */}
@@ -110,7 +110,7 @@ export const Hero = () => {
               <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#d8008a_0%,#024a87_50%,#d8008a_100%)]" />
               
               {/* Inner Button Content (Website Brand Gradient) */}
-              <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-gradient-to-r from-[#024a87] via-[#68268c] to-[#d8008a] px-6 py-3 text-sm md:text-base font-medium text-white backdrop-blur-3xl transition-all duration-500 group-hover:bg-gradient-to-l">
+              <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-gradient-to-r from-[#024a87] via-[#68268c] to-[#d8008a]  px-6 py-3 text-sm md:text-base font-medium text-white backdrop-blur-3xl transition-all delay-150 duration-500 group-hover:bg-gradient-to-l">
                 {portal.label}
               </span>
             </a>

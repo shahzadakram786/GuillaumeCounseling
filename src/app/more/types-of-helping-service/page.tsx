@@ -1,36 +1,28 @@
-
+"use client";
 import { PageHero } from "@/components/layout/PageHero";
+import { ServiceAccordions } from "@/components/sections/services/ServiceAccordions";
+import { ServiceReferences } from "@/components/sections/services/ServiceRefrences";
+import { ServiceComparisonHero } from "@/components/sections/services/ServicesComparisonHero";
 import { typesOfServiceData } from "@/lib/data/pages/typesOfService";
+
 
 const TypesOfService = () => {
   const d = typesOfServiceData;
 
   return (
     <>
-      
+          <PageHero title={d.title} breadcrumbs={d.breadcrumbs} />
+    
+      {/* Hero section with Image and Intro */}
+      <ServiceComparisonHero data={d.consultationIntro} />
 
-      <PageHero title={d.title} breadcrumbs={d.breadcrumbs} />
+      {/* Blue section with Accordions */}
+      <ServiceAccordions faqs={d.detailedServices} />
 
-      <main id="main-content" className="py-16 md:py-24">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <div className="space-y-8">
-            {d.services.map((service) => (
-              <div key={service.title} className="bg-muted rounded-lg p-6">
-                <h2 className="text-xl font-heading font-bold text-foreground mb-3">{service.title}</h2>
-                <p className="text-muted-foreground leading-relaxed">{service.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </main>
+      {/* White section with References */}
+      <ServiceReferences references={d.references} />
     </>
   );
 };
 
 export default TypesOfService;
-
-
-export const metadata = {
-  title: "Types of Helping Service | Guillaume Counseling",
-  description: "Learn about the different types of helping services we offer.",
-};

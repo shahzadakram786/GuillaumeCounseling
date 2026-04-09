@@ -4,6 +4,8 @@ import { CulturalServices } from "@/components/sections/CulturalServices";
 import { ServiceDetails } from "@/components/sections/ServiceDetails";
 import { AboutSection } from "@/components/sections/AboutSection";
 import { siteConfig } from "@/lib/data/siteConfig";
+import { ServiceAccordions } from "@/components/sections/services/ServiceAccordions";
+import { typesOfServiceData } from "@/lib/data/pages/typesOfService";
 
 const Index = () => {
   const jsonLd = {
@@ -34,6 +36,7 @@ const Index = () => {
         <CulturalServices />
         <ServiceDetails />
         <AboutSection />
+        <ServiceAccordions faqs={typesOfServiceData.detailedServices} />
       </main>
     </>
   );
