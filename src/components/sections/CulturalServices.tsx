@@ -62,7 +62,7 @@ export const CulturalServices = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-16 items-start">
           
           {/* Left Column: Sticky Content */}
-          <div className="lg:col-span-1 lg:sticky lg:top-32 pointer-events-auto">
+          <div className="lg:col-span-1 lg:sticky lg:top-32 pointer-events-auto font-bold">
             <h2 className="text-3xl md:text-[40px] font-marcellus text-gray-900 leading-[1.1]">
               Culturally Specific <br />
               <span className="text-[#2b7bc4]">Services</span>

@@ -5,7 +5,6 @@ import { contactInfo } from "@/lib/data/contact";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { siteConfig } from "@/lib/data/siteConfig";
-
 export const Hero = () => {
   // DRY Method: Define the dynamic data for the portal buttons here
   const portalLinks = [
@@ -90,33 +89,30 @@ export const Hero = () => {
         </div>
       </section>
 
-      {/* ==========================================
-          PORTAL BUTTONS BAR
-          ========================================== */}
-      <div className="bg-white py-6 border-y-2 border-[#d8008a] transition w-full">
-        <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-5 md:gap-8">
-          
-          {/* DRY Method: Mapping over the array with MAGIC BORDER & GRADIENT */}
-          {portalLinks.map((portal) => (
-            <a
-              key={portal.id}
-              href={portal.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              // Outer wrapper handles the shape and focus rings
-              className="relative inline-flex h-12 w-full md:w-auto overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-[#d8008a] focus:ring-offset-2 focus:ring-offset-slate-50 group shadow-md"
-            >
-              {/* Spinning Brand-Color Gradient Background */}
-              <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#d8008a_0%,#024a87_50%,#d8008a_100%)]" />
-              
-              {/* Inner Button Content (Website Brand Gradient) */}
-              <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-gradient-to-r from-[#024a87] via-[#68268c] to-[#d8008a]  px-6 py-3 text-sm md:text-base font-medium text-white backdrop-blur-3xl transition-all delay-150 duration-500 group-hover:bg-gradient-to-l">
-                {portal.label}
-              </span>
-            </a>
-          ))}
-        </div>
-      </div>
+   
+
+
+<div className="bg-white py-8 border-y border-gray-100 w-full">
+  <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6">
+    
+    {portalLinks.map((portal) => (
+      <a
+        key={portal.id}
+        href={portal.href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group relative inline-flex items-center justify-center px-8 py-3.5 text-base font-bold text-white transition-all duration-300 ease-out bg-[#17609f] rounded-full hover:bg-[#124d82] hover:-translate-y-1 hover:shadow-[0_10px_20px_rgba(216,0,138,0.15)] focus:outline-none focus:ring-2 focus:ring-[#d8008a] focus:ring-offset-2"
+      >
+        <span className="relative flex items-center gap-2">
+          {portal.label}
+          {/* Arrow slides to the right slightly on hover */}
+          <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+        </span>
+      </a>
+    ))}
+
+  </div>
+</div>
     </>
   );
 };
