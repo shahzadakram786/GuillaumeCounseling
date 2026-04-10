@@ -88,3 +88,18 @@ export const aboutSection = {
   text: "Guillaume Counseling refers to 3 outpatient behavioral health clinics operating in 3 different states: Guillaume Counseling Services, P.C., dba Guillaume Counseling, operates in Oregon, and is registered to also do business in the state of Texas and Washington State. Guillaume Marriage and Family Counseling of California, P.C., dba Guillaume Marriage and Family Counseling, and Guillaume Counseling, operate in the state of California, and Guillaume Marriage and Family Counseling of Texas, P.C., operates in the state of Texas. These 3 companies are the businesses of the President/CEO and Program Director, Nahomie Guillaume, MS, MBA, LMFT, providing hope, healing, and support to clients from all walks of life; we integrate faith, science and wisdom to meet the needs of a diverse clientele from all walks of life and all creed and beliefs system.",
   link: "/about/mission-and-vision",
 };
+
+
+export const insuranceProviders = [
+  'Aetna', 'Blue Cross', 'United Healthcare', 'Optum', 'Oscar', 
+  'Optima Health Plan', 'Oxford', 'Cigna', 'Medicare', 'Medicaid'
+]
+
+export const insuranceProvidersImages = [
+  { name: 'Aetna', logo: '/insurances/imageye___-_imgi_47_image.webp' },
+  { name: 'BlueCross', logo: '/insurances/BlueCross.webp' },
+  { name: 'Medicare', logo: '/insurances/Medicare.webp' },
+  { name: 'Medicaid', logo: '/insurances/MedicAid.webp' },
+  { name: 'Oscar', logo: '/insurances/Oscar.webp' },
+  { name: 'Optum', logo: '/insurances/Optum.webp' },
+];

@@ -3,10 +3,10 @@ import type { Config } from "tailwindcss";
 export default {
   darkMode: ["class"],
   content: [
-    "./pages/**/*.{ts,tsx}", 
-    "./components/**/*.{ts,tsx}", 
-    "./app/**/*.{ts,tsx}", 
-    "./src/**/*.{ts,tsx}"
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
   ],
   prefix: "",
   theme: {
@@ -18,15 +18,13 @@ export default {
         lg: "4rem",
       },
       screens: {
-        "2xl": "1360px", // This strictly locks the maximum width to 1360px
+        "2xl": "1360px",
       },
     },
     extend: {
       fontFamily: {
-        // Added Marcellus here so your Hero section text works
         marcellus: ['"Marcellus"', "serif"],
-        // You can also change the default heading font to Marcellus here if you want ALL h1-h6 tags to use it
-        heading: ['"Marcellus"', "serif"], 
+        heading: ['"Marcellus"', "serif"],
         sans: ["Open Sans", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
       },
@@ -80,7 +78,16 @@ export default {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      // ✅ ALL keyframes correctly inside one object
       keyframes: {
+        marquee: {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(calc(-100% - var(--gap)))" },
+        },
+        "marquee-vertical": {
+          from: { transform: "translateY(0)" },
+          to: { transform: "translateY(calc(-100% - var(--gap)))" },
+        },
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -94,7 +101,10 @@ export default {
           to: { opacity: "1", transform: "translateY(0)" },
         },
       },
+      // ✅ ALL animations correctly inside one object
       animation: {
+        marquee: "marquee var(--duration) infinite linear",
+        "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-in": "fade-in 0.6s ease-out forwards",
